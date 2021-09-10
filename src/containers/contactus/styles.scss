@@ -1,0 +1,119 @@
+.main {
+    .contact-header{
+        margin: 0;
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+    }
+}
+
+.dark-mode.main .contact-header{
+    color: white !important;
+}
+.contactUs-main-div{
+    display: flex;
+    //align-items: center;
+
+}
+.contactUs-main-div > * {
+    flex: 1 1;
+    margin-bottom: 30px;
+}
+.contactus-image-div img{
+    //max-width: 100%;
+    height: auto;
+    width: 90%;
+    /* padding-left: 20px; */
+    margin-left: 58px;
+}
+
+.contactUs-div{
+    .form{
+        .contact-form-div{
+            padding-right: 35px;
+            .form-labels{
+
+            }
+            .form-inputs{
+                transform: none;
+            }
+            .ant-form-item-explain-error{
+                font-size: 12px;
+                margin-top: 5px;
+            }
+            .submit-button{
+                background-color: #182978;
+                border: solid 1px #182978;
+                color: #ffffff;
+                font-weight: 700;
+                //margin-right: 50px;
+                border-radius: 6px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 14px;
+                margin-top: 16px;
+                height: 43px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out 0s;
+            }
+            .submit-button:hover{
+                background-color: #ffffff;
+                color: #182978;
+                transition: all 0.3s ease 0s;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .contact-header {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-header {
+    font-size: 30px;
+    text-align: center;
+  }
+ /* .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  } */
+  .contactUs-main-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactus-image-div img{
+    //max-width: 100%;
+    width: 100%;
+    margin-left: 0px;
+    /* padding-left: 20px; */
+}
+
+.contactUs-div{
+    .form{
+        .contact-form-div{
+    padding-right: 0px;
+}
+    }
+}
+
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .skills-text {
+    font-size: 16px;
+  }
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .skills-image-div {
+    /* display: none; */
+    order: 2;
+  }
+}

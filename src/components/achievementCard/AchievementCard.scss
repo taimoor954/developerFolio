@@ -37,10 +37,13 @@
   box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
 }
 .certificate-image-div {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  text-align: center;
+    position: relative;
+    height: 250px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .achievement-cards-div {
   display: grid;

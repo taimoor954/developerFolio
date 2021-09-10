@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 @import "../../_globalColor";
+
 
 /*React-headroom*/
 .headroom-wrapper {
@@ -16,9 +18,9 @@
   color: $textColorDark !important;
 }
 
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
-}
+//.dark-menu li a:hover {
+ // background-color: $buttonColor !important;
+//}
 
 .header {
   background-color: $lightBackground1;
@@ -38,14 +40,35 @@
   color: $subTitle;
 }
 
+.header li {
+ padding: 15px 20px;
+}
 .header li a {
-  display: block;
-  padding: 15px 20px;
-  color: $textColor;
-  text-decoration: none;
+    display: block;
+    color: #868e96;
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+    transition: all .4s ease-in-out;
 }
 
-.header li a:hover,
+.header li a:hover{
+  border-bottom: 4px solid #6688cc8a;
+}
+
+.header.dark-menu li a:hover{
+  border-bottom: 4px solid #ffff;
+}
+
+.header li:last-child a {
+  border-bottom: none;
+}
+
+.header.dark-menu li:last-child a {
+  border-bottom: none;
+}
+
 .header .menu-btn:hover {
   background-color: $headerHoverBG;
 }
@@ -61,11 +84,16 @@
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Agustina Regular" , 'Style Script', cursive;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+  color: #182978;
+}
+
+.header.dark-menu .logo .logo-name{
+  color: #a5b0e6 ;
 }
 
 /* menu */

@@ -1,6 +1,6 @@
 {
-  "short_name": "Saad Pasta Portfolio",
-  "name": "Saad Pasta Portfolio",
+  "short_name": "Muhammad Taimoor Portfolio",
+  "name": "Muhammad Taimoor Portfolio",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -18,7 +18,7 @@
       "sizes": "384x384"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://personaldevportfolio.netlify.app/",
   "display": "standalone",
   "theme_color": "#6c63ff",
   "background_color": "#ffffff"
