@@ -26,6 +26,7 @@ export default function ContactUs() {
     form.resetFields()
     setFormInfo({})
   }
+
   const finishHandler =  async() =>{
     console.log(formInfo)
     if(formInfo.email && formInfo.message) {
@@ -115,7 +116,7 @@ export default function ContactUs() {
                           <Input.TextArea className="form-inputs textArea-input" type="text"  value={formInfo.message} onChange={changeHandler} placeholder="Enter message" rows={6} name="message"/>
                         </Form.Item>
                          <Form.Item className="button-label" style={{marginBottom: "13px"}}>
-                            <Button  key="submit" onClick={finishHandler}
+                            <Button  htmlType="submit" onClick={finishHandler}
                             className="submit-button">
                               Send Message
                             </Button>
